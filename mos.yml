@@ -1,0 +1,36 @@
+author: mongoose-os
+description: A Mongoose OS app skeleton
+version: 1.0
+
+tags:
+  - c
+
+sources:
+  - src
+
+filesystem:
+  - fs
+config_schema:
+  - ["pppos.enable", true]
+  - ["pppos.fc_enable",false]
+  - ["pppos.uart_no", 2]
+  - ["pppos.baud_rate", 115200]
+  - ["pppos.apn", "airtelgprs.com"]
+  - ["pppos.user", ""]
+  - ["pppos.pass", ""]
+
+libs:
+ # - name: newsdget
+  - origin: https://github.com/mongoose-os-libs/boards
+  - origin: https://github.com/mongoose-os-libs/ca-bundle
+  - origin: https://github.com/mongoose-os-libs/rpc-service-config
+  - origin: https://github.com/mongoose-os-libs/rpc-service-fs
+  - origin: https://github.com/mongoose-os-libs/rpc-uart
+  - origin: https://github.com/mongoose-os-libs/pppos
+  - origin: https://github.com/mongoose-os-libs/mbedtls
+  - origin: https://github.com/nliviu/sdlib
+
+binary_libs:
+  - C:\Users\mohan_56fps7d\Desktop\http_client_final\deps\newsdget\build\lib.a 
+
+manifest_version: 2017-09-29
